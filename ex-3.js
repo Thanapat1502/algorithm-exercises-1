@@ -1,5 +1,7 @@
 function singleNumber(nums) {
   // Start coding here
+  const result = nums.reduce((arr, cur)=>{return arr ^ cur})
+  return result
 }
 
 let result1 = singleNumber([2, 2, 1]);
